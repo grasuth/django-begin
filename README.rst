@@ -16,6 +16,7 @@ In a few bullet points, I guess that means:
 * Not too prescriptive
 * Feels just 'right', like django style
 * Covers 80% of django project and deployment setup
+* can be non-destructively re-applied when needed
 
 There, that's not too hard to achieve :-)
 
