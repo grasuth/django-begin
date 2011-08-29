@@ -19,4 +19,24 @@ In a few bullet points, I guess that means:
 
 There, that's not too hard to achieve :-)
 
+What needs to be done
+---------------------
+
+Here are a few notes that cover the set of items that need to be dealt with when creating a django project.
+
+* create project filesystem (manage.py etc)
+* set up settings files
+* add wsgi adapter
+* .ignores for git and subversion
+* add deployment scripting
+* add requirements dir, requirements.txt
+* load requirements
+* set up tests (if needed)
+
+
+Useful References
+-----------------
+
+The following are good references for all of this:
+
 
