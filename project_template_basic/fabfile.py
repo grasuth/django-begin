@@ -6,6 +6,7 @@ from fabric.operations import _prefix_commands, _prefix_env_vars
 # for ubuntu 10 hosting on amazon aws
 # is not clever enough to start aws instances by itself
 
+# aws standard ubuntu instance, main user ubuntu
 env.user = 'ubuntu'
 env.disable_known_hosts = True # always fails for me without this
 env.hosts = ['myproject.mydevhost']
