@@ -1,9 +1,15 @@
+from __future__ import with_statement
 from fabric.api import env, local, run, require, cd
 from fabric.operations import _prefix_commands, _prefix_env_vars
 
+# basic fab file
+# for ubuntu 10 hosting on amazon aws
+# is not clever enough to start aws instances by itself
+
+env.user = 'ubuntu'
 env.disable_known_hosts = True # always fails for me without this
 env.hosts = ['myproject.mydevhost']
-env.root = '/opt/webapps/myproject'
+env.root = '/home/ubuntu/myproject'
 env.proj_root = env.root + '/src/myproject'
 env.proj_repo = 'git@github.com:myuser/myrepo.git'
 env.pip_file = env.proj_root + '/requirements.pip'
